@@ -26,6 +26,9 @@ function prepend (ele, list) {
 };
 
 function nth (list, num) {
+  if (!list) {
+    return undefined;
+  }
   return (listToArray(list)[num]);
 };
 
